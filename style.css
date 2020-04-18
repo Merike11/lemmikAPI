@@ -1,0 +1,25 @@
+label {
+    display:block;
+    margin:5px 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+td,
+th {
+    padding: 5px;
+    border-bottom: 1px solid #aaa;
+}
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    padding: 0;
+}
+.formarea {
+    margin-left: 10;
+}
