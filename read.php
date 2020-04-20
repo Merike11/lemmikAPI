@@ -9,10 +9,8 @@ if (isset($_POST['submit'])) {
     $sql = "SELECT *
     FROM Favorites.paintings
     WHERE title = :title";
-         
-
+    
     $title = $_POST['title'];
-    $img_path = 'images/';
     $statement = $connection->prepare($sql);
     $statement->bindParam(':title', $title, PDO::PARAM_STR);
     $statement->execute();
@@ -64,7 +62,7 @@ if (isset($_POST['submit'])) {
         </tr>
        
     <div class="img-block">
-        <img src="<?php echo $row["image"]; ?>" alt="" title="<?php echo $title; ?>" width="200" height="300" class="img-responsive" />
+        <img src="<?php echo $row["image"]; ?>" alt="" title="<?php echo $title; ?>" width="auto" height="300" class="img-responsive" />
         <p><strong><?php echo $title; ?></strong></p>
     </div>         
       <?php } ?>
