@@ -15,7 +15,7 @@ try {
   $statement = $connection->prepare($sql);
   $statement->execute();
   
-  $result = $statement->fetchAll();
+  $result = $statement->fetchAll(PDO::FETCH_ASSOC);
   } catch(PDOException $error) {
   echo $sql . "<br>" . $error->getMessage();
 }
