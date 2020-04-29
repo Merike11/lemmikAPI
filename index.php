@@ -15,9 +15,18 @@
         <a href="delete.php"><strong>Kustuta andmed</strong></a> 
       </li>      
     </ul>
-<?php 
+
+    <h3> Merikese lemmikud: </h3>
+
+    <div id="output" class="row" ></div>
+ <br>
+
+ <a href="index2.php">Vajuta siia, et liikuda Keijo lemmikute juurde</a>
+
+ 
+
+    
 
 
 
 
-?>

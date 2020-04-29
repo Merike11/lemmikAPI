@@ -23,3 +23,30 @@ html, body {
 .formarea {
     margin-left: 10;
 }
+#paintings {
+    padding: 1em;
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3em 2em;
+}
+.painting {
+    background-color: azure;
+    border-style: groove;
+    border-radius: 10px;
+}
+.title {
+    padding: 10px;
+    background-color: lightgreen;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.title:hover {
+    background-color: rgb(44, 178, 32);
+}
+.description {
+    font-style: initial;
+    font-family: serif;
+    font-variant: inherit;
+}
